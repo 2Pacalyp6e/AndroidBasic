@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Lesson1</string>
-    <string name="best_weather_app">Best Weather APP</string>
-    <string name="refresh">Обновить</string>
-    <string name="CityN">Город</string>
-    <string name="City">Город</string>
-    <string name="temperature">+22</string>
-    <string name="pic">TODO</string>
-</resources>
