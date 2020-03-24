@@ -8,9 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="184dp"
+        android:layout_width="652dp"
+        android:layout_height="403dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="180dp"
         android:contentDescription="@string/pic"
         app:layout_constraintBottom_toBottomOf="@+id/calendarView"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,11 +27,10 @@
         android:textColorLink="@color/colorAccent"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019"
+        app:layout_constraintVertical_bias="0.036"
 
         />
 
@@ -38,17 +38,19 @@
         android:id="@+id/button"
         android:layout_width="109dp"
         android:layout_height="39dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
         android:backgroundTint="#FF9E80"
         android:text="@string/refresh"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hellotextView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_width="294dp"
+        android:layout_height="196dp"
+        android:layout_marginEnd="384dp"
+        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -57,19 +59,19 @@
         style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="359dp"
         android:layout_height="24dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="184dp"
         android:max="10"
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hellotextView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="72dp"
         android:layout_height="47dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="328dp"
         android:text="@string/City"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -78,14 +80,25 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="194dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="108dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="100dp"
         android:text="@string/temperature"
         android:textAlignment="center"
         android:textSize="100sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="352dp"
+        android:onClick="onClick"
+        android:text="@string/ButtonChoose"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
